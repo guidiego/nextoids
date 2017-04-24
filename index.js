@@ -28,6 +28,11 @@ app.prepare()
         ctx.respond = false
     })
 
+    server.use(async (ctx, next) => {
+        ctx.res.statusCode = 200
+        await next()
+    })
+
     server.use(router.routes())
 
     server.listen(3000, "0.0.0.0", (err) => {

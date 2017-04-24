@@ -5,14 +5,14 @@
       "css-modules-transform", {
         "extensions": [".css", ".sass"],
         "append": [ "postcss-cssnext" ],
-        "extractCss": "./static/css/bundle.css",
-        "preprocessCss": "./pre-processor.js"
+        "extractCss": "./src/static/css/bundle.css",
+        "preprocessCss": "./src/pre-processor.js"
       }
     ],
     [
-      "module-resolver", {
-        "root": ["./src"]
-      }
+        "module-resolver", {
+          "root": [ "./" ]
+        }
     ]
   ]
 }
