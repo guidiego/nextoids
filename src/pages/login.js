@@ -1,11 +1,9 @@
 import React from 'react';
 
-import { Button } from 'components'
-
-export const Login = () => (
+const Login = () => (
     <div>
         Login
-        <Button>My Button</Button>
+        <button>My Button</button>
     </div>
 );
 

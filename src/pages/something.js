@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from './something.sass';
 
-export const Something = () => (
-    <div>
+const Something = () => (
+    <div className={styles.something}>
         Something
     </div>
 );
