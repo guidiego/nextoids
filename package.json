@@ -8,8 +8,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node .",
-    "prod": "export NODE_ENV='production' && yarn build",
-    "build": "next build ./src"
+    "build": "next build ./src",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
   "dependencies": {
     "koa": "^2.2.0",
@@ -20,6 +21,11 @@
   },
   "devDependencies": {
     "babel-plugin-css-modules-transform": "^1.2.7",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
     "node-sass": "^4.5.0",
     "postcss": "^5.2.16",
     "postcss-cssnext": "^2.10.0"

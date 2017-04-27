@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Login = () => (
-    <div>
+  <div>
         Login
         <button>My Button</button>
-    </div>
+  </div>
 );
 
 export default Login;
