@@ -8,11 +8,6 @@
         "extractCss": "./src/static/css/bundle.css",
         "preprocessCss": "./src/pre-processor.js"
       }
-    ],
-    [
-        "module-resolver", {
-          "root": [ "./" ]
-        }
     ]
   ]
 }
